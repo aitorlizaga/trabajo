@@ -26,6 +26,10 @@
             echo "<div class='titulo'>";
             echo "<h2>Bienvenido, admin</h2>";
             echo "</div>";
+            echo "<div class='admin'>";
+            echo "<img class='tien' src='imagenes/tien.gif' width='200px'></img>";
+            echo "</div>";
+
             $conn = new mysqli("localhost", "root", "", "aitor_tienda");
 
             // Obtener todos los productos del carrito
@@ -162,7 +166,6 @@
             // Mostrar el precio total del carrito
             echo "</table>";
             echo "<h3>Precio total del carrito: " . $precio_total . " €</h3>";
-            echo "<img class='tien' src='imagenes/tien.gif' width='200px'></img>";
 
 
             echo "<h3>Compras realizadas</h3>";

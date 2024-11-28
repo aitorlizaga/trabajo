@@ -10,6 +10,16 @@ body {
   height: 100%;
   
 }
+.admin{
+  align-items: center;
+  width: 200px;
+  
+  /* Centra el h3 dentro de su contenedor */
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
 
 
 /* Contenedor de tarjetas con flexbox */
