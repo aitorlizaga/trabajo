@@ -1,0 +1,171 @@
+/* Contenedor principal que se adapta a diferentes tamaños */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../imagenes/body.jpg);
+  background-size: cover;
+  background-color: #360000;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+/* Contenedor de tarjetas con flexbox */
+.tarjeta-contenedor, .productos-contenedor {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 20px;
+padding: 20px;
+width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.titulo{
+  background-color: #ffd8db;
+
+}
+
+/* Estilos de la tarjeta con unidades relativas */
+.tarjeta, .producto {
+flex: 1 1 180px; /* Esto hace que las tarjetas crezcan o se encojan según el espacio disponible */
+max-width: 300px; /* Límite máximo de ancho */
+background-image: url(../imagenes/tarjetafondo.jpg);
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: transform 0.3s ease-in-out;
+background-size: cover;
+}
+
+/* Ajuste de las imágenes dentro de las tarjetas */
+.tarjeta img, .producto img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+.producto p{
+  background-color: #ffcad3;
+  border-radius: 10px;
+}
+
+
+/* Regla de medios para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+/* Cambiar el tamaño de las tarjetas en pantallas pequeñas */
+.tarjeta, .producto {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 300px; /* Limita el tamaño máximo */
+}
+
+.producto p{
+  background-color:#ffd8db;
+  border-radius: 10px;
+}
+
+
+/* Asegurar que el contenedor se ajuste bien */
+.tarjeta-contenedor, .productos-contenedor {
+  gap: 15px; /* Reduce el espacio entre las tarjetas */
+  padding: 15px;
+}
+
+/* Reducir el tamaño de la fuente para pantallas pequeñas */
+p, h3 {
+  font-size: 14px;
+}
+}
+
+/* Regla de medios para pantallas grandes (mayores de 1200px) */
+@media (min-width: 1200px) {
+/* Establecer el tamaño de las tarjetas para pantallas grandes */
+.tarjeta, .producto {
+  width: 300px; /* Tamaño fijo para pantallas grandes */
+  margin: 20px;
+}
+
+/* Mejorar el espaciado de los productos */
+.tarjeta-contenedor, .productos-contenedor {
+  gap: 30px; /* Más espacio entre tarjetas */
+  padding: 30px;
+}
+
+/* Ajustar el tamaño de los textos */
+p, h3 {
+  font-size: 16px;
+}
+}
+
+/* Estilo de los botones */
+.menu button {
+background-color: #ffc2c7;
+color: white;
+border: none;
+padding: 12px;
+cursor: pointer;
+height: 50px;
+font-size: 16px;
+width: 100%; /* Hace que el botón ocupe todo el ancho disponible en pantallas pequeñas */
+max-width: 200px;
+border-radius: 8px;
+border: 2px solid #360000;
+align-items: center;
+}
+
+.menu {
+ background-color: #ffcfd7;
+  background-size: cover;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  
+  }
+
+button:hover {
+background-color: #ff91a3; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para las tablas */
+table {
+width: 100%;
+max-width: 700px;
+margin: 20px auto;
+background-color: aliceblue;
+background-image: url(../imagenes/tarjetafondo.jpg);
+background-size: cover;
+
+border-radius: 5px;
+}
+
+th, td {
+text-align: center;
+padding: 10px;
+background-color: #fde3e7;
+opacity: 0.8;
+}
+
+/* Asegurar que el formulario sea responsivo */
+form {
+display: flex;
+flex-direction: column;
+width: 100%;
+max-width: 400px;
+margin: auto;
+}
+
+h3, h2 {
+  text-align: center;  /* Centra el texto dentro del h3 */
+  padding: 10px;
+  background-color: #fde3e7;
+  opacity: 0.8;
+  width: 400px;
+  
+  /* Centra el h3 dentro de su contenedor */
+  margin-left: auto;
+  margin-right: auto;
+}
