@@ -112,12 +112,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `contraseña`) VALUES
-(8, 'Aitor', '$2y$10$9lp3qTJw1CCZpM/X20h4HuP.WB2cj4vU6Qy5byaCtVc8yjuV7kNX6'),
-(9, '123qwe', '$2y$10$Q0a5DRPEinCi2DTdWv5Qt.73phzJOYpBmADBN8FG0TYxYo.kpVf7a'),
-(10, 'admin', '$2y$10$rV22LiVVEJ9T9FLXiXvIVu1ODYWnEFXd.lRFYqvPZ5zUPLOBGGFGa'),
-(11, 'rocio', '$2y$10$T7qOFepTmQBearAg5VYXcuZP2jRjL9qk6hzeLOb9zzwGY/Xrw4.km'),
-(12, 'google', '$2y$10$0LtAsgcipDPku3OAnUM6Ee3TEGlZpXIvHzGRQEZbfWngHDJy6RbE2'),
-(13, 'pito', '$2y$10$9dbfi.EepipLTHA9GLC0Ku1ZEGWBnOGoUSP4ydIqxYMAUMXJoTCp6');
+(10, 'admin', '$2y$10$rV22LiVVEJ9T9FLXiXvIVu1ODYWnEFXd.lRFYqvPZ5zUPLOBGGFGa');
 
 --
 -- Índices para tablas volcadas
